@@ -1,0 +1,133 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+body {
+    * {
+        font-family: 'Open Sans', sans-serif
+    }
+}
+
+// custom button prev
+// custom title category
+
+.my__carousel_main {
+    div {
+        ol {
+            right: 0 !important;
+            left: auto !important;
+            bottom: auto !important;
+            top: 4 !important;
+        }
+
+        .carousel-control-prev {
+            display: flex;
+            justify-content: flex-start;
+            background-color: black;
+            width: 5%;
+            top: 2%;
+            bottom: 18%;
+            padding-left: 30px;
+            margin-left: 55px;
+        }
+
+        .carousel-control-next {
+            display: flex;
+            justify-content: flex-end;
+            background-color: black;
+            width: 5%;
+            top: 2%;
+            bottom: 18%;
+            padding-right: 30px;
+            margin-right: 55px;
+        }
+    }
+}
+
+.wrap-list-movie {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 4;
+}
+
+.item {
+    position: relative;
+    display: block;
+    flex: 1 1 0px;
+    transition: transform 500ms;
+}
+
+// .wrap-list-movie:focus-within .item,
+// .wrap-list-movie:hover .item {
+//     // transform: translateX(-25%);
+// }
+
+// .item:focus~.item,
+// .item:hover~.item {
+//     transform: translateX(25%);
+// }
+
+
+
+.wrap-list-movie .item:focus,
+.wrap-list-movie .item:hover {
+    transform: scale(1.5);
+    transform-origin: top center;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.wrap-list-movie .item:first-child:hover {
+    transform: scale(1.5);
+    transform-origin: top left;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.wrap-list-movie .item:last-child:hover {
+    transform: scale(1.5);
+    transform-origin: top right;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.container-movie {
+    overflow: hidden;
+}
+
+.item img {
+    display: block;
+    max-width: 100%;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+}
+
+
+/**/
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+select:focus,
+select:active,
+select:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: none !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
